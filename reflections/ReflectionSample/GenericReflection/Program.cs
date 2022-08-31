@@ -4,6 +4,8 @@ using GenericReflection;
 
 Console.Title = "Learning Reflection";
 
+ReflectionMagicSample.Process();
+
 var iocContainer = new IoCContainer();
 iocContainer.Register<IWaterService, TapWaterService>();
 var waterService = iocContainer.Resolve<IWaterService>();
