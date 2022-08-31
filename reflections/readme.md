@@ -46,3 +46,60 @@ Reflection is the process by which a computer program can observe and modify its
 - Dynamic instance creation
 - Binding a type to an existing object
 - Getting the type from an existing object
+
+## Instantiating and Manipulating Objects
+
+## Reflection Behind the Scenes
+
+    System.Reflection.RuntimeMethodInfo.Invoke, which **calls** into System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal
+
+    System.RuntimeMethodHandle.PerformSecurityCheck, which calls into System.GC.KeepAlive
+
+    System.RuntimeMethodHandle.InvokeMethod
+
+-   Getting the info object 
+    - Type metadata parsing
+-   Actual method invocation 
+    - Argument validity checks
+    - Error handling
+-   Security checks
+    - Restricted methods
+    - Dynamic code access security permissions
+
+-   Dynamic activation and invocation at runtime is reasonably common
+
+    - Relationships between the different components are determined at runtime 
+    - Decreases the amount of tight coupling
+
+<unwrap> unwrap the object
+
+## Using Reflection with Generics
+
+### Advantages of Generics
+
+- Type safety: compiler will throw an error on unsafe cast
+- Reusability: one generic class can be used on a variety of types
+- Improved performance
+
+## Advanced
+
+-   Security implications from past to present
+-   Working towards cleaner code with **ReflectionMagic**
+
+Reflection was influenced by CAS
+- SecurityCritical attribute
+- ReflectionPermissionFlag enumeration
+- The reflection-only context allowed loading assemblies for inspection but not execution
+**.NET 6 no longer supports or honors these**
+
+        var person = new Person("Kevin");
+        var privateField = person.GetType().GetField("_aPrivateField",BindingFlags.Instance | BindingFlags.NonPublic);
+        privateField.SetValue(person, "New private field value");
+
+## Working Towards Cleaner Code with ReflectionMagic
+
+ReflectionMagic is a library that helps with writing cleaner code
+- Uses a custom DynamicObject underneath the covers
+
+        var person = new Person("Kevin");
+        person.AsDynamic()._aPrivateField = "Updated value via ReflectionMagic";
