@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<Product xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.pdsa.com">
+  <APrivateValue>Paul</APrivateValue>
+  <Color>White</Color>
+  <ListPrice>20</ListPrice>
+  <Name>A New Product</Name>
+  <ProductID>999</ProductID>
+  <ProductNumber>NEW-999</ProductNumber>
+  <Size>Medium</Size>
+  <StandardCost>10</StandardCost>
+</Product>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<Product xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ProductId="999" xmlns="http://www.pdsa.com">
+  <ProductName>A New Product</ProductName>
+  <ProductNumber>NEW-999</ProductNumber>
+  <StandardCost>10</StandardCost>
+  <ListPrice>20</ListPrice>
+  <Size xsi:nil="true" />
+</Product>

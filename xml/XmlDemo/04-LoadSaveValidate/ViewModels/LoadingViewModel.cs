@@ -19,7 +19,7 @@ public class LoadingViewModel {
     /// </summary>
     public XDocument LoadUsingXDocument() {
         // TODO: Write your code here
-        XDocument doc = XDocument.Load(new XmlFilePath.FilePath().GetXmlPath("Products.xml"));
+        XDocument doc = XDocument.Load(XmlFileName);
 
         // Display XDocument
         Console.WriteLine(doc);

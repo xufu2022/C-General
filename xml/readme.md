@@ -116,6 +116,26 @@ Language used to navigate and select nodes
     - Create a XPathNavigator object
     - Call nav.Evaluate() method
 
+            XElement elem = XElement.Load(XmlFileName);
+            XPathNavigator nav = elem.CreateNavigator();
+            double value;
+
+            // Average
+            string query = "sum(/SalesOrderDetail/LineTotal) div count(/SalesOrderDetail)";
+
+            // Minimum
+            string query = "/SalesOrderDetail/LineTotal[";
+            query += "     not(. >=../preceding-sibling::SalesOrderDetail/LineTotal)";
+            query += " and not(. >=../following-sibling::SalesOrderDetail/LineTotal)]";
+
+            // Maximum
+            string query = "/SalesOrderDetail/LineTotal[";
+            query += "     not(. <=../preceding-sibling::SalesOrderDetail/LineTotal)";
+            query += " and not(. <=../following-sibling::SalesOrderDetail/LineTotal)]";
+
+            //Count
+            value = (double)nav.Evaluate("count(/SalesOrderDetail)");
+
 - Min and Max
     - No XPath functions
     - Use not(), /preceding-sibling and /following-sibling
