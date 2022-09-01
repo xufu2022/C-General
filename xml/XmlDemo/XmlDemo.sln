@@ -3,7 +3,53 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.32804.182
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-CreateModify", "03-CreateModify\03-CreateModify.csproj", "{A925A5A9-9844-4764-8257-1894D7898097}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-LoadSaveValidate", "04-LoadSaveValidate\04-LoadSaveValidate.csproj", "{5DF349E3-892F-4DDA-A890-3D6C096157AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9B22DE20-7706-4D48-80D4-3B580050BE2B}"
+	ProjectSection(SolutionItems) = preProject
+		Xml\Products-Comment-Namespace.xml = Xml\Products-Comment-Namespace.xml
+		Xml\Products-Comment-Namespace.xsd = Xml\Products-Comment-Namespace.xsd
+		Xml\Products.xml = Xml\Products.xml
+		Xml\Products.xsd = Xml\Products.xsd
+		Xml\ProductsAttributes.xml = Xml\ProductsAttributes.xml
+		Xml\ProductsAttributes.xsd = Xml\ProductsAttributes.xsd
+		Xml\SalesAndDetails.xml = Xml\SalesAndDetails.xml
+		Xml\SalesAndDetails.xsd = Xml\SalesAndDetails.xsd
+		Xml\SalesOrderDetails.xml = Xml\SalesOrderDetails.xml
+		Xml\SalesOrderDetails.xsd = Xml\SalesOrderDetails.xsd
+		Xml\SalesOrderHeaders.xml = Xml\SalesOrderHeaders.xml
+		Xml\SalesOrderHeaders.xsd = Xml\SalesOrderHeaders.xsd
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlFilePath", "XmlFilePath\XmlFilePath.csproj", "{252A4DCE-8018-4A42-AF32-966EA0521079}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-XPath", "05-XPath\05-XPath.csproj", "{22924728-4258-436B-85BB-EC70228D497C}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A925A5A9-9844-4764-8257-1894D7898097}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A925A5A9-9844-4764-8257-1894D7898097}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A925A5A9-9844-4764-8257-1894D7898097}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A925A5A9-9844-4764-8257-1894D7898097}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DF349E3-892F-4DDA-A890-3D6C096157AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DF349E3-892F-4DDA-A890-3D6C096157AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DF349E3-892F-4DDA-A890-3D6C096157AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DF349E3-892F-4DDA-A890-3D6C096157AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{252A4DCE-8018-4A42-AF32-966EA0521079}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{252A4DCE-8018-4A42-AF32-966EA0521079}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{252A4DCE-8018-4A42-AF32-966EA0521079}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{252A4DCE-8018-4A42-AF32-966EA0521079}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22924728-4258-436B-85BB-EC70228D497C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22924728-4258-436B-85BB-EC70228D497C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22924728-4258-436B-85BB-EC70228D497C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22924728-4258-436B-85BB-EC70228D497C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
