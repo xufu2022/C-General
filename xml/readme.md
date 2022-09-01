@@ -1,8 +1,18 @@
 # Free XSD Schema Generator
 
-    <link>www.freeformatter.com/xsdgenerator.htm</link>
+www.freeformatter.com/xsd-generator.html
 
-xsd product.xsd /c 
+Validate XML using XSD
+
+www.freeformatter.com/xml-validator-xsd.html
+
+Generate a Class from an XSD
+--------------------------------
+
+$env:Path += ";C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools\x64"
+
+xsd Products.xsd /c
+
 
 # System.Xml.Linq
 
