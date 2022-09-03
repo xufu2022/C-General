@@ -1,5 +1,7 @@
 # Null-value-type and strings
 
+> [!NOTE] the code not ready
+
 Reference and Value Types Overview
 
 | Value  | Reference |
