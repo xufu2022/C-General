@@ -36,6 +36,28 @@ Highlight Usages in File
 Locate in the Solution Explorer
 -   Shift+Alt+L
   
+Auto Complete
+-   Ctrl+ Shift + Enter
+
+Find actions and options
+-   Ctrl+Shift+A (ReSharper_GotoAction)
+
+Insert Console.write
+-   Ctrl+E+L => cw => ng=>guid creation
+
+Enter member name:
+-   Alt+ \
+  
+Tips: create type variable
+- SB.var => var stringBuilder = new StringBuilder();
+- number % 2 ==0.if => if (number % 2 ==0)
+- number % 2 ==0.return => return number % 2 ==0;
+
+serach everywhere -> type name -> find text :
+-   Ctrl + T
+
+-   Ctrl + shift + T => folder + file
+-   shift + Alt+  T => symbol
 
 If you prefer using the keyboard, set the caret at a line that has a gutter mark, press Alt+Enter, and pick the navigation action from the menu. Alternatively, you can use the dedicated navigation commands:
 
