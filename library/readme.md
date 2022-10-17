@@ -16,8 +16,12 @@
 - Understanding the TargetFramework property <TargetFramework>
 - Understanding the Nullable property   <Nullable>
 - How to add assembly level attributes  <AssemblyAttribute>
+  
+    	set  <GenerateAssemblyInfo>false</GenerateAssemblyInfo> in propertygroup
+        then  .AssemblyInfo will not be generated
+
 - Assembly level attributes for non-string values   [assembly: NUnit.Framework.Timeout(1000)]
-- Assembly level attributes across multiple projects    Directory.Build.props
+- Assembly level attributes across multiple projects    Directory.Build.props (add under solution)
 - Adding NuGet package references   Adding NuGet package references
 - Adding DLL references 
 
@@ -160,3 +164,45 @@ Semantic versioning allows you to communicate changes in your class library proj
 
 <AssemblyVersion>2.2.2.2</AssemblyVersion>
 dotnet build /p:Version=4.0.0.1
+
+
+## Tips
+
+    //Add/remove global namespace
+	<ItemGroup>
+        <Using Remove="System.Collections.Generic"/>
+        <Using Include="System.Collections.Generic"/>
+	</ItemGroup>
+
+
+    <AssemblyVersion>2.1.3.4</AssemblyVersion>
+    <FileVersion>4.3.2.1</FileVersion>
+	<InformationalVersion>2 beta 4</InformationalVersion>
+
+    dotnet build 
+    dotnet build --version-suffix preview2  
+        product version: 1.0.0-preview2
+    
+    dotnet build /p:VersionPrefix=1.2.3.4
+        file version/product version: 1.2.3.4
+
+    dotnet build --version-suffix preview9  /p:VersionPrefix=3.4.5.6
+    dotnet build /p:VersionPrefix=3.4.5.6-preview9
+        file version: 3.4.5.6
+        product version: 3.4.5.6-preview9
+
+if assembly version is hard-coded in ui, it will take precedent over build command so the assembly version will not be updated
+
+the command below can override
+
+    dotnet build /p:AssemblyVersion=20.0.0.0 /p:FileVersion=30.0.0.0    /p:InformationalVersion=40.0.0.0-alpha4
+
+Nuget
+
+    dotnet pack /p:Version=2.0.0
+    dotnet pack /p:Version=2.1.0-beta+initialtest
+
+    // Creating Package Automatically
+    check the generate nuget package on build
+
+    
