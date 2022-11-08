@@ -1,0 +1,1 @@
+# Embracing a Functional Style

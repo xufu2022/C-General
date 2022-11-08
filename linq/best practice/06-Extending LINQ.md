@@ -1,0 +1,3 @@
+# Extending LINQ
+
+## Concatenating strings
