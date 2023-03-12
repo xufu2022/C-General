@@ -37,4 +37,17 @@ interval.Minutes // 1
 
 ```csharp
 var isoWeek = ISOWeek.GetWeekOfYear(date.DateTime);
+
+//DateTimeOffset.CompareTo
+var a = new DateTimeOffset(2024, 03, 28, 00, 01, 00, TimeSpan.FromHours(1));
+var b = new DateTimeOffset(2024, 03, 28, 00, 01, 00, TimeSpan.FromHours(1));
+int comparisonResult = a.CompareTo(b); //// Same = 0
+
+int comparisonResult = a.AddDays(-1).CompareTo(b); // Earlier = -1
+int comparisonResult = a.AddDays(1).CompareTo(b) // Later = 1
+
 ```
+
+## Unix Timestamp
+
+Elapsed seconds since January 1st, 1970 (UTC)
