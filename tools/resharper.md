@@ -1,5 +1,7 @@
 #  shortcut
 
+Alt+ enter: most common use=> type to go to action
+
 navigate to previous: 
 -   Ctrl + -
 Jump back to previous edit: 
@@ -66,4 +68,6 @@ Go to Base Symbols Alt+Home to navigate to base types or members.
 Go to Derived Symbols Ctrl+F12 to list all derived symbols for a type or a member and navigate directly to one of them.
 
 Go to Implementation Ctrl+F12 to find actual implementations of types and members bypassing intermediate steps in the inheritance hierarchy.
+
+write function then use short cut complete statement(Ctrl+ Shift+Ent)
 
