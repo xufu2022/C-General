@@ -1,0 +1,13 @@
+Failed: Go to Containing Declaration (^[). You typed ^⇧{
+Failed: Go to Type of Symbol (^⇧F11). You typed ⌥⇧T
+Failed: Go to Related Files (^⌥F7). You typed ⌥⇧F7
+Failed: Show usages of symbol in popup list (⌥⇧F12). You typed ^⌥F12
+Failed: Go to Next Issue in File (⌥PAGEDOWN). You typed ^⇧PAGEDOWN
+Failed: Navigate to the previous member in the current type (⌥UP). You typed ^⌥PAGEDOWN
+Failed: Highlight Usages in File (⌥⇧F11). You typed ^⌥F7
+Failed: Insert all required syntax to complete the current statement (^⇧↵). You typed ^⌥SPACE
+Failed: Navigate to the next item in the current tool window (^⌥PAGEUP). You typed ^⌥PAGEDOWN
+Failed: Go to the most derived types of the current type (^F12). You typed ⌥END
+Failed: Navigate to the next member in the current type (⌥DOWN). You typed ⌥HOME
+Failed: Go to Symbol (⌥⇧T). You typed ⌥HOME
+Failed: Go to Previous Issue in File (⌥PAGEUP). You typed ^⌥HOME

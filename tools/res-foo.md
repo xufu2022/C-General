@@ -8,7 +8,7 @@ Ctrl+ ]			            : Goto Brace
 Ctrl+ EU		            : Surround the current selection with a Surround Template
 Alter + Enter:	            : Quick Fix
 
-
+Ctrl+ W                     : Select current line
 Ctrl+ Shift +RIGHT	        : Extend Selection to Next Word
 Ctrl+ Shift +LEFT	        : Extend Selection to Previous Word
 Ctrl+ Alt   +RIGHT	        : Extend Selection
