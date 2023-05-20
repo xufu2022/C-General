@@ -69,5 +69,16 @@ Go to Derived Symbols Ctrl+F12 to list all derived symbols for a type or a membe
 
 Go to Implementation Ctrl+F12 to find actual implementations of types and members bypassing intermediate steps in the inheritance hierarchy.
 
+Navigate Back: Ctrl + -
+Navigate Forward: Ctrl + Shift + -
+Find Usages: Shift + F12
+Finding all references: Shift + F12
+Next Occurrence: Ctrl + Alt + Shift + PgDn
+Previous Occurrence: Ctrl + Alt + Shift + PgUp
+Find Next:  F3
+Find all occurrences : Shift + Alt + F12
+
+
+
 write function then use short cut complete statement(Ctrl+ Shift+Ent)
 
